@@ -6,6 +6,7 @@ namespace Helpdesk_Ticket_Management_System.Models.Entities
 {
     public class ApplicationUser : IdentityUser
     {
+        [ForeignKey("Department")]
         public int DepartmentId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

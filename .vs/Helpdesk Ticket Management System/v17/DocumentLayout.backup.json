@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\migrations\\20251130061216_update-again-dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:migrations\\20251130061216_update-again-dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\models\\entities\\customsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:models\\entities\\customsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\models\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:models\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Migrations\\20251130061055_update-dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251130061055_update-dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|d:\\helpdesk-ticket-system\\helpdesk ticket management system\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDEFAEF7-6312-487B-A47D-A816CE8E8B0A}|Helpdesk Ticket Management System.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251130061216_update-again-dbcontext.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Migrations\\20251130061216_update-again-dbcontext.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251130061216_update-again-dbcontext.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Migrations\\20251130061216_update-again-dbcontext.cs",
-              "RelativeToolTip": "Migrations\\20251130061216_update-again-dbcontext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T06:12:17.211Z",
+              "WhenOpened": "2025-12-01T00:01:12.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20251130061055_update-dbcontext.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Migrations\\20251130061055_update-dbcontext.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251130061055_update-dbcontext.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Migrations\\20251130061055_update-dbcontext.cs",
-              "RelativeToolTip": "Migrations\\20251130061055_update-dbcontext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T06:10:55.366Z",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T23:14:27.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\Entities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\ApplicationUser.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\Entities\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\Entities\\ApplicationUser.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBIAAAAtAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T06:09:49.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomSetup.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\Entities\\CustomSetup.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\CustomSetup.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Models\\Entities\\CustomSetup.cs",
-              "RelativeToolTip": "Models\\Entities\\CustomSetup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T06:09:42.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "Data\\SeedData.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Data\\SeedData.cs",
-              "RelativeToolTip": "Data\\SeedData.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T05:59:45.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Helpdesk-Ticket-System\\Helpdesk Ticket Management System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T05:35:55.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T23:14:10.904Z"
             }
           ]
         }

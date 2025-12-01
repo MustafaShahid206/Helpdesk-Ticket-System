@@ -7,10 +7,10 @@ namespace Helpdesk_Ticket_Management_System.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -27,7 +27,12 @@ namespace Helpdesk_Ticket_Management_System.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(model);
+                var errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return Json(new { success = false, errors });
             }
 
             var user = new ApplicationUser
@@ -38,45 +43,54 @@ namespace Helpdesk_Ticket_Management_System.Controllers
                 LastName = model.LastName,
                 DepartmentId = model.DepartmentId
             };
-
+            
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
             {
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction("Index", "Home");
+                await _signInManager.SignInAsync(user, model.RememberMe);
+                return Json(new { success = true });
             }
 
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
+            var identityErrors = result.Errors.Select(e => e.Description).ToList();
 
-            return View(model);
+            return Json(new { success = false, errors = identityErrors });
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                return View(model);
+                var modelErrors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return Json(new { success = false, errors = modelErrors });
             }
 
-            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+            var result = await _signInManager.PasswordSignInAsync(
+                model.Email,
+                model.Password,
+                model.RememberMe,
+                false
+            );
 
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
-                return RedirectToAction("Index", "Home");
+                return Json(new { success = true });
             }
 
-            ModelState.AddModelError("", "Invalid login attempt.");
-            return View(model);
+            return Json(new { success = false, errors = new[] { "Invalid login attempt." } });
         }
+
 
         public async Task<IActionResult> Logout()
         {

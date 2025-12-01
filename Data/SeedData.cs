@@ -30,6 +30,7 @@ namespace Helpdesk_Ticket_Management_System.Data
             {
                 admin = new ApplicationUser
                 {
+                    DepartmentId = 3,
                     UserName = adminEmail,
                     Email = adminEmail,
                     FirstName = "System",

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div>
+        <div class="grid lg:grid-cols-5 md:grid-cols-2 items-center gap-y-4 h-full">
+            <div class="max-md:order-1 lg:col-span-3 md:h-screen w-full bg-[#000842] md:rounded-tr-xl md:rounded-br-xl lg:p-12 p-8">
+                <img src="https://readymadeui.com/signin-image.webp" class="lg:w-2/3 w-full h-full object-contain block mx-auto" alt="login-image" />
+            </div>
+
+            <div class="lg:col-span-2 w-full p-8 max-w-lg max-md:max-w-lg mx-auto">
+                <form id="loginForm">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-8">
+                        <h1 class="text-slate-900 text-3xl font-bold">Login</h1>
+                        <p class="text-[15px] mt-6 text-slate-600">Don't have an account <a href="javascript:void(0);" class="text-blue-600 font-medium hover:underline ml-1 whitespace-nowrap">Register here</a></p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <label class="text-slate-900 text-[15px] font-medium mb-2 block">Email</label>
+                            <div class="relative flex items-center">
+                                <input name="Email" type="email" required class="w-full text-sm text-slate-900 bg-slate-100 focus:bg-transparent pl-4 pr-10 py-3.5 rounded-md border border-gray-200 focus:border-blue-600 outline-none" placeholder="Enter email" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-4" viewBox="0 0 682.667 682.667">
+                                    <defs>
+                                        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                            <path d="M0 512h512V0H0Z" data-original="#000000"></path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#a)" transform="matrix(1.33 0 0 -1.33 0 682.667)">
+                                        <path fill="none" stroke-miterlimit="10" stroke-width="40" d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z" data-original="#000000"></path>
+                                        <path d="M472 274.9V107.999c0-11.027-8.972-20-20-20H60c-11.028 0-20 8.973-20 20V274.9L0 304.652V107.999c0-33.084 26.916-60 60-60h392c33.084 0 60 26.916 60 60v196.653Z" data-original="#000000"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-slate-900 text-[15px] font-medium mb-2 block">Password</label>
+                            <div class="relative flex items-center">
+                                <input name="Password" type="password" required class="w-full text-sm text-slate-900 bg-slate-100 focus:bg-transparent pl-4 pr-10 py-3.5 rounded-md border border-gray-200 focus:border-blue-600 outline-none" placeholder="Enter password" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-4 cursor-pointer" viewBox="0 0 128 128">
+                                    <path d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z" data-original="#000000"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex items-center">
+                                <input id="RememberMe" name="RememberMe" type="checkbox" class="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-slate-300 rounded-md" />
+                                <label for="RememberMe" class="ml-3 block text-[15px] text-slate-900">
+                                    Remember me
+                                </label>
+                            </div>
+                            <div>
+                                <a href="jajvascript:void(0);" class="text-blue-600 font-medium text-sm hover:underline">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <button id="loginBtn" type="submit" class="w-full py-2.5 px-4 tracking-wider text-sm rounded-md text-white bg-slate-800 hover:bg-slate-900 focus:outline-none cursor-pointer flex items-center justify-center gap-2">
+                            <span class="btn-text">Login</span>
+                            <span class="loader hidden border-2 border-white border-t-transparent rounded-full w-4 h-4 animate-spin"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $("#loginForm").submit(function (e) {
+            e.preventDefault();
+
+            let btn = $("#loginBtn");
+            btn.prop("disabled", true);
+            btn.addClass("opacity-70 cursor-not-allowed");
+            btn.find(".btn-text").text("Processing...");
+            btn.find(".loader").removeClass("hidden");
+
+            var formData = $("#loginForm").serializeArray();
+
+            var remember = $("#RememberMe").is(":checked") ? "true" : "false";
+            formData.pop();
+            formData.push({ name: "RememberMe", value: remember });
+            
+            $.ajax({
+                url: '/Account/Login',
+                method: 'POST',
+                data: formData,
+                success: function (res) {
+                    console.log(res);
+                    if (res.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Login Success',
+                            text: 'You have successfully Login!'
+                        }).then(() => {
+                            window.location.href = "/";
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Login Failed',
+                            html: res.errors.join("<br>")
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Server Error',
+                        text: 'Something went wrong'
+                    });
+                },
+                complete: function () {
+                    btn.prop("disabled", false);
+                    btn.removeClass("opacity-70 cursor-not-allowed");
+                    btn.find(".btn-text").text("Login");
+                    btn.find(".loader").addClass("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
